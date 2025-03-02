@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Reservation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Delicious Bites</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Reservation Section -->
+    <section class="reservation">
+        <div class="reservation-box">
+            <h1>Reserve Your Table</h1>
+            <p>Book your dining experience with us.</p>
+            
+            <form class="reservation-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <input type="date" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="" disabled selected>Number of Guests</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5+">5 or More</option>
+                    </select>
+                </div>
+            <button type="submit" class="reserve-btn">Reserve Now</button>
+                 
+            </form>
+        </div>
+    </section>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reserve a Table</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="reservation-container">
+            <h2>Reserve Your Table</h2>
+            <form action="reservation.html" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="date" name="date" required>
+                <input type="time" name="time" required>
+                <input type="number" name="guests" placeholder="Number of Guests" required>
+                <button type="submit">Reserve Table</button>
+            </form>
+            <div class="confirmation-message" id="reservation-message">
+                Your table has been reserved successfully!
+            </div>
+        </div>
+    </body>
+    </html>
+    <!-- Animated Floating Particles -->
+    <div class="particles">
+        <div class="particle" style="top: 10%; left: 20%; animation-duration: 6s;"></div>
+        <div class="particle" style="top: 30%; left: 50%; animation-duration: 8s;"></div>
+        <div class="particle" style="top: 50%; left: 70%; animation-duration: 7s;"></div>
+        <div class="particle" style="top: 80%; left: 40%; animation-duration: 5s;"></div>
+        <div class="particle" style="top: 20%; left: 80%; animation-duration: 9s;"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now - Your Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">Delicious Bites</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Order Section -->
+    <section class="order">
+        <div class="order-box">
+            <h2>Place Your Order</h2>
+
+            <!-- Order Form -->
+            <form action="#confirmationMessage">
+                <div class="menu-grid">
+                    <label><input type="checkbox" name="items[]" value="Sizzler"> 🍽 Sizzler</label>
+                    <label><input type="checkbox" name="items[]" value="Margherita Pizza"> 🍕 Margherita Pizza</label>
+                    <label><input type="checkbox" name="items[]" value="Pasta Alfredo"> 🍝 Pasta Alfredo</label>
+                    <label><input type="checkbox" name="items[]" value="Chocolate Brownie"> 🍫 Chocolate Brownie</label>
+                    <label><input type="checkbox" name="items[]" value="Hakka Noodles"> 🍜 Hakka Noodles</label>
+                    <label><input type="checkbox" name="items[]" value="Gulab Jamun"> 🍯 Gulab Jamun</label>
+                    <label><input type="checkbox" name="items[]" value="Momos"> 🥟 Momos</label>
+                    <label><input type="checkbox" name="items[]" value="Dal Makhani"> 🍛 Dal Makhani</label>
+                    <label><input type="checkbox" name="items[]" value="Butter Naan"> 🫓 Butter Naan</label>
+                    <label><input type="checkbox" name="items[]" value="Paneer Butter Masala"> 🧀 Paneer Butter Masala</label>
+                    <label><input type="checkbox" name="items[]" value="Spring Rolls"> 🥠 Spring Rolls</label>
+                    <label><input type="checkbox" name="items[]" value="Ice Cream Sundae"> 🍨 Ice Cream Sundae</label>
+                    <label><input type="checkbox" name="items[]" value="Dosa"> 🥞 Dosa</label>
+                    <label><input type="checkbox" name="items[]" value="Sandwich"> 🥪 Sandwich</label>
+                    <label><input type="checkbox" name="items[]" value="Shakes"> 🥤 Shakes</label>
+                </div>
+
+                <!-- Customer Details -->
+                <div class="input-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="order-btn">Submit Order</button>
+            </form>
+
+            <!-- Confirmation Message -->
+            <div id="confirmationMessage">
+                <h3>✅ Order Submitted!</h3>
+                <p>Thank you for your order. We'll contact you soon!</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
